@@ -60,7 +60,7 @@ class ContainerAbstractServiceFactory implements AbstractFactoryInterface
      * @param  string                  $requestedName
      * @return bool
      */
-    public function canCreateServiceWithName(ContainerInterface $container, $requestedName)
+    public function canCreate(ContainerInterface $container, $requestedName)
     {
         $config = $this->getConfig($container);
         if (empty($config)) {
